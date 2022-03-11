@@ -1,25 +1,41 @@
 #include <iostream>
 #include <string>
 
-string login="andrzej", haslo="hasloandrzeja";;
-string ulogin="", uhaslo="";
-int x;
+
 using namespace std;
+int proby;
+int main() {
+    string login = "andrzej";
+    string haslo = "andrzejhaslo";
+    string ulogin, uhaslo;
+   
 
-int main(){
+    do {
+        cout << "podaj login: ";
+        cin >> ulogin;
+        cout << endl << "podaj haslo: ";
+        cin >> uhaslo;
 
-
-    do{
-        cout<<"podaj login: ";
-        cin>>ulogin;
-        cout<<endl<<"podaj haslo: ";
-        cin>>uhaslo;
-
-        if(ulogin==login){
-            x=1;
+        if (ulogin != login && uhaslo != haslo) {
+            cout << "podano nieprawidlowy login i haslo" << endl;
         }
-        if
-    }while();
+        else if (uhaslo != haslo) {
+            cout << "podano nieprawidlowe haslo" << endl;
+        }
+        else if(ulogin != login){
+            cout << "podano nieprawidlowy login" << endl;
+        }
+
+        proby++;
+    } while ((login != ulogin || haslo != uhaslo) && proby < 4);
+
+    if(proby==4){
+        cout<<endl<<"======================"<<endl<<"za duzo prob, zablokowano"<<endl<<"======================"<<endl;
+    }else{
+        cout<<endl<<"================="<<endl<<"ZALOGOWANO"<<endl<<"================="<<endl;
+    }
+
+
 
 
     return 0;

@@ -27,12 +27,12 @@ int main() {
         }
 
         proby++;
-    } while ((login != ulogin || haslo != uhaslo) && proby < 4);
+    } while ((login != ulogin || haslo != uhaslo) && proby < 3);
 
-    if(proby==4){
-        cout<<endl<<"======================"<<endl<<"za duzo prob, zablokowano"<<endl<<"======================"<<endl;
+    if(login==ulogin && haslo==uhaslo){
+        cout<<endl<<"======================"<<endl<<"ZALOGOWANO"<<endl<<"======================"<<endl;
     }else{
-        cout<<endl<<"================="<<endl<<"ZALOGOWANO"<<endl<<"================="<<endl;
+        cout<<endl<<"================="<<endl<<"za duzo prob, konto zablokowane"<<endl<<"================="<<endl;
     }
 
 

@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 
-string login="andrzej", haslo="hasloandrzeja";;
+string login="andrzej", haslo="hasloandrzeja";
 string ulogin="", uhaslo="";
-int x;
+int x, proby;
 using namespace std;
 
 int main(){
@@ -11,15 +11,24 @@ int main(){
 
     do{
         cout<<"podaj login: ";
-        cin>>ulogin;
+        cin >> ulogin;
         cout<<endl<<"podaj haslo: ";
-        cin>>uhaslo;
+        cin >> uhaslo;
 
-        if(ulogin==login){
-            x=1;
+        if(ulogin != login){
+            cout<<"podano nieprawidlowy login"<<endl;
+        }else if(uhaslo != haslo){
+            cout<<"podano nieprawidlowe haslo"<<endl;
+        }else{
+            cout<<"login oraz haslo sa nieprawidlowe"<<endl;
         }
-        if
-    }while();
+
+        proby++;
+        cout<<"proby: "<<proby<<endl;
+    }while((login==ulogin && haslo==uhaslo) && proby<4);
+
+    cout<<"konirc";
+
 
 
     return 0;

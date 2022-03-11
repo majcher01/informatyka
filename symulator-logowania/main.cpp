@@ -16,21 +16,25 @@ int main() {
         cout << endl << "podaj haslo: ";
         cin >> uhaslo;
 
-        if (ulogin != login) {
-            cout << "podano nieprawidlowy login" << endl;
+        if (ulogin != login && uhaslo != haslo) {
+            cout << "podano nieprawidlowy login i haslo" << endl;
         }
         else if (uhaslo != haslo) {
             cout << "podano nieprawidlowe haslo" << endl;
         }
-        else {
-            cout << "login oraz haslo sa nieprawidlowe" << endl;
+        else if(ulogin != login){
+            cout << "podano nieprawidlowy login" << endl;
         }
 
         proby++;
-        cout << "proby: " << proby << endl;
-    } while ((login == ulogin && haslo == uhaslo) && proby < 4);
+    } while ((login != ulogin || haslo != uhaslo) && proby < 4);
 
-    cout << "konirc";
+    if(proby==4){
+        cout<<endl<<"======================"<<endl<<"za duzo prob, zablokowano"<<endl<<"======================"<<endl;
+    }else{
+        cout<<endl<<"================="<<endl<<"ZALOGOWANO"<<endl<<"================="<<endl;
+    }
+
 
 
 

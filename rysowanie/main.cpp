@@ -48,6 +48,17 @@ int main(){
         cout<<endl;
     }
 
+    cout<<endl<<endl<<"trojkat na odwrot"<<endl<<endl;
+
+    for(int i=0;i<6;i++){
+
+        for(int j=5;i<j;j--){
+            cout<<"# ";
+        }
+
+        cout<<endl;
+    }
+
 //trapez
 
 //ten trapez to dalo sie w sumie prosciej ale sobie poskladalem z 3 figur

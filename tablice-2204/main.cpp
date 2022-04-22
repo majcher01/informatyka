@@ -8,21 +8,21 @@ int main(){
 
 cout<<"Zawartosc tablicy:"<<endl;
 for(int x : tablica){
-    cout<<x<<", ";
+    cout<<x<<" ";
 }
 
-tablica[3]=100, tablica[5]=-33;
+tablica[2]=100, tablica[4]=-33;
 
 cout<<endl<<"Tablica po zmianie:"<<endl;
 for(int x : tablica){
-    cout<<x<<", ";
+    cout<<x<<" ";
 }
 
 cout<<endl<<"Dodatnie elementy:"<<endl;
 
 for(int x : tablica){
     if(x>0){
-        cout<<x<<", ";
+        cout<<x<<" ";
     }
 }
 
@@ -41,7 +41,7 @@ cout<<endl<<"Elementy mniejsze od 10:"<<endl;
 
 for(int x : tablica){
     if(x<10){
-        cout<<x<<", ";
+        cout<<x<<" ";
     }
 }
 cout<<y;

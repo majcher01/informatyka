@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int a, b, licznik;
+int a, b, licznik, reszta;
 
 int main(){
 
@@ -16,13 +16,19 @@ licznik = 0;
 while(a>0){
     a=a-b;
     if(a<0){
+        reszta = a+b;
         break;
     }
     licznik++;
 //    cout<<"a="<<a<<endl;
 }
 
+
+if(reszta>0){
+    cout <<"wynik: "<<licznik<<", reszta: "<<reszta<<endl;
+}else{
 cout<<"wynik: "<<licznik<<endl;
+}
 
 
 

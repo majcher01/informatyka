@@ -47,25 +47,25 @@ elif(zadanie == 7):
                 print(end="   ")
         print(end="\n\n")
         
-elif(zadanie == 8)://trojkat
+elif(zadanie == 8):#trojkat
     a = int(input("Podaj bok "))
 
 
-for i in range(a):
-   for j in range(i + 1):
-      print("*", end=" ")
-   print("")
-elif(zadanie == 9)://pusty kwadrat
+    for i in range(a):
+        for j in range(i + 1):
+            print("*", end=" ")
+        print("")
+elif(zadanie == 9):#pusty kwadrat
     side = int(input("Podaj bok pustego kwadratu  : "))
 
 
-for i in range(side):
-    for j in range(side):
-        if (i == 0 or i == side - 1 or j == 0 or j == side - 1):
-            print('*', end='  ')
-        else:
-            print(' ', end='  ')
-    print()
+    for i in range(side):
+        for j in range(side):
+            if (i == 0 or i == side - 1 or j == 0 or j == side - 1):
+                print('*', end='  ')
+            else:
+                print(' ', end='  ')
+        print()
 
 
 

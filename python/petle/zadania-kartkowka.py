@@ -1,9 +1,13 @@
 print("Zadania:\n1.Ciag liczb 0-4\n2.ciag zdefiniowany przez uzytkownika\n3.Ciag od 6 do 30 co 5")
 zadanie = int(input("\nWprowadz numer zadania: "))
 
+#wyswietlenie liczb od 1 do 4
+
 if(zadanie == 1):
     for x in range(0, 5):
         print(str(x))
+
+#petla robiona funkcja w ktorej user podaje parametry
 
 elif(zadanie == 2):
 
@@ -16,24 +20,39 @@ elif(zadanie == 2):
     skok=int(input("wprowadz skok petli: "))
     stop=stop+1
     ciag(start, stop, skok)
+
+#petla od 6 do 30 co 6
+
 elif(zadanie == 3):
     for i in range(6, 31, 6):
         print(str(i))
+
+
+#petla od 0 do 9 z pominieciem niektorych elementow
 
 elif(zadanie == 4):
     for i in range(0, 10, 1):
         if(i == 2 or i==4 or i==5 or i==7 or i==8):
             continue
         print(str(i))
+
+#petla od 53 do 56
+
 elif(zadanie == 5):
     for i in range(53, 57, 1):
         print(str(i))
+
+#zamalowany kwadrat, user podaje dlugosc
+
 elif(zadanie == 6):
     bok = int(input("podaj bok kwadratu: "))
     for i in range(bok):
         for i in range(bok):
             print("#", end = ' ')
         print()
+
+
+#pusty prostokat/kwadrat, user podaje oba boki
 
 elif(zadanie == 7):
     a = int(input("Podaj pierwszy bok: "))
@@ -47,7 +66,10 @@ elif(zadanie == 7):
                 print(end="   ")
         print(end="\n\n")
         
-elif(zadanie == 8):#trojkat
+
+#zamalowany trojkat, user podaje bok
+
+elif(zadanie == 8):
     a = int(input("Podaj bok "))
 
 
@@ -55,7 +77,10 @@ elif(zadanie == 8):#trojkat
         for j in range(i + 1):
             print("*", end=" ")
         print("")
-elif(zadanie == 9):#pusty kwadrat
+
+#pusty kwadrat, user podaje jeden bok
+
+elif(zadanie == 9):
     side = int(input("Podaj bok pustego kwadratu  : "))
 
 
@@ -68,6 +93,11 @@ elif(zadanie == 9):#pusty kwadrat
         print()
 
 
+#petla od 100 do 0 co 10, w sensie ze w dol jedzie
+
+elif(zadanie == 10):
+    for i in range(100, -1, -10):
+        print(str(i))
 
 
 

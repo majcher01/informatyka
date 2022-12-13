@@ -1,0 +1,33 @@
+funkcje, z parametrem, policzenie czegos funkcja
+listy
+    ostatni element: -1
+    pierwzy element: 0
+funkcja length
+imiona = ["x", "y", "z"]
+n=len(imiona)
+
+for i in range (n):
+    print(imiona[i])
+
+for imie in imiona:
+    print(imie)
+
+porownywanie znakow/ciagow
+jezeli sie roznia to iloma znakami
+concat w pythonie - plus
+len() - liczy dlugosc stringa
+
+napisz program ktory policzy liczbe znakow itp
+
+napis="jakisprzykladowytekst"
+
+for z in napis:
+    print(z)
+
+for i in range (len(napis)):
+    print(napis[i])
+
+policz ile znakow jest w danym stringu
+napis.count('e')
+
+napis.upper() - wszystko capsem

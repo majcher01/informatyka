@@ -11,3 +11,5 @@ print("nieparzyste")
 for liczba in liczby:
     if(liczba%2!=0):
         print(liczba)
+
+print(liczby[:2])

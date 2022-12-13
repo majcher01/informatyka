@@ -31,3 +31,6 @@ policz ile znakow jest w danym stringu
 napis.count('e')
 
 napis.upper() - wszystko capsem
+
+tablica[:i] - wszystko przed elementem
+tablica[i:] - wszystko po elemencie

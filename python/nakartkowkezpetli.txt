@@ -1,0 +1,4 @@
+trojkat
+kwadrat wypelniony/niewypelniony
+ciagi liczb roznych parzyste, nieparzyste co 2 co 5 w gore w dol
+for, while

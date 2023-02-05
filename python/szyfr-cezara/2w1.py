@@ -77,17 +77,17 @@ def decrypt(ciphertext, shift):
     return plaintext
 
 while True:
-    choice = input("Would you like to (E)ncrypt or (D)ecrypt a message? ").upper()
-    if choice == 'E':
-        plaintext = input("Enter the message: ")
-        shift = int(input("Enter the shift value: "))
+    choice = input("Chcesz zaszyfrowac tekst (1) czy odszyfrowac (2) ? ").upper()
+    if choice == '1':
+        plaintext = input("Wprowadz tekst: ")
+        shift = int(input("Wprowadz przesuniecie: "))
         ciphertext = encrypt(plaintext, shift)
-        print("Encrypted message: " + ciphertext)
-    elif choice == 'D':
-        ciphertext = input("Enter the encrypted message: ")
-        shift = int(input("Enter the shift value: "))
+        print("Zaszyfrowany tekst: " + ciphertext)
+    elif choice == '2':
+        ciphertext = input("Wprowadz tekst: ")
+        shift = int(input("Wprowadz przesuniecie: "))
         plaintext = decrypt(ciphertext, shift)
-        print("Decrypted message: " + plaintext)
-    repeat = input("Would you like to repeat the process? (Y/N) ").upper()
-    if repeat != 'Y':
+        print("Odszyfrowany tekst: " + plaintext)
+    repeat = input("Czy chcesz powtorzyc ? (T/N) ").upper()
+    if repeat != 'T':
         break

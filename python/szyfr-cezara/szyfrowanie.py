@@ -10,7 +10,7 @@ def encrypt(plaintext, shift):
             ciphertext += char
     return ciphertext
 
-plaintext = input('Enter the plaintext: ')
-shift = int(input('Enter the shift value: '))
+plaintext = input('Wprowadz tekst: ')
+shift = int(input('Wprowadz przesuniecie: '))
 ciphertext = encrypt(plaintext, shift)
-print(f'The encrypted message is: {ciphertext}')
+print(f'Zaszyfrowany tekst: {ciphertext}')

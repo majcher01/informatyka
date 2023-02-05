@@ -10,7 +10,7 @@ def decrypt(ciphertext, shift):
             plaintext += char
     return plaintext
 
-ciphertext = input('Enter the ciphertext: ')
-shift = int(input('Enter the shift value: '))
+ciphertext = input('Wprowadz teskt: ')
+shift = int(input('Wprowadz przesuniecie: '))
 plaintext = decrypt(ciphertext, shift)
-print(f'The decrypted message is: {plaintext}')
+print(f'Odszyfrowany teskt to: {plaintext}')

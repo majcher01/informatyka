@@ -5,7 +5,7 @@ wybor=int(input('Wybierz zadanie: (1-3): '))
 
 if(wybor==1):
 
-        
+                        #tu jest rozmiar kubelka 
     def bucket_sort(arr, bucket_size=10):
         if len(arr) == 0:
             return arr

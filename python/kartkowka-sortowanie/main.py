@@ -1,3 +1,10 @@
+##########################
+#                        #
+#  Jakub Majcherski 4M   #
+#                        #
+##########################
+
+
 print("1.Sortowanie kubełkowe.")
 print("2.Sortowanie przez wstawianie.")
 print("3.Sortowanie przez wybór.")
